@@ -1,0 +1,123 @@
+.container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1.4fr 0.6fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "MainView MainView MainView"
+      "PStats Log EStats";
+  }
+  
+  .MainView {  display: grid;
+    grid-template-columns: 0.1fr 1.9fr 0.1fr 1.9fr 0.1fr;
+    grid-template-rows: 0.1fr 1.5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . Esc . ."
+      ". Player . Enemies .";
+    grid-area: Main-View;
+  }
+  
+  .Player { grid-area: Player; }
+  
+  .Enemies {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "E1 E1 . ."
+      "E1 E1 E3 E3"
+      "E2 E2 E3 E3"
+      "E2 E2 E4 E4"
+      ". . E4 E4";
+    grid-area: Enemies;
+  }
+  
+  .E1 { grid-area: E1; }
+  
+  .E2 { grid-area: E2; }
+  
+  .E3 { grid-area: E3; }
+  
+  .E4 { grid-area: E4; }
+  
+  .Esc { grid-area: Esc; }
+  
+  .PStats {  display: grid;
+    grid-template-columns: 0.6fr 1.2fr 1.2fr 0.7fr;
+    grid-template-rows: 1.2fr 1.2fr 1.1fr 1.1fr 1.1fr 1.2fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . . ."
+      ". Hp Speed ."
+      ". Atk Def ."
+      ". MAtk MDef ."
+      ". Acc Evs ."
+      ". . . .";
+    grid-area: P-Stats;
+  }
+  
+  .Hp { grid-area: Hp; }
+  
+  .Speed { grid-area: Speed; }
+  
+  .Atk { grid-area: Atk; }
+  
+  .Def { grid-area: Def; }
+  
+  .MAtk { grid-area: MAtk; }
+  
+  .MDef { grid-area: MDef; }
+  
+  .Acc { grid-area: Acc; }
+  
+  .Evs { grid-area: Evs; }
+  
+  .EStats {  display: grid;
+    grid-template-columns: 0.7fr 1.2fr 1.2fr 0.6fr;
+    grid-template-rows: 1.2fr 1.2fr 1.1fr 1.1fr 1.2fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . . ."
+      ". E1Hp E1Hp ."
+      ". E2Hp E2Hp ."
+      ". E3Hp E3Hp ."
+      ". E4Hp E4Hp ."
+      ". . . .";
+    grid-area: E-Stats;
+  }
+  
+  .E1Hp { grid-area: E1Hp; }
+  
+  .E2Hp { grid-area: E2Hp; }
+  
+  .E3Hp { grid-area: E3Hp; }
+  
+  .E4Hp { grid-area: E4Hp; }
+  
+  .Log {  display: grid;
+    grid-template-columns: 0.2fr 2.2fr 0.3fr 2.2fr 0.3fr 2.2fr 0.2fr;
+    grid-template-rows: 0.2fr 0.7fr 0.2fr 2.9fr 0.1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . . . . . ."
+      ". AtkButton . DefButton . FleeButton ."
+      ". . . . . . ."
+      ". CombatLog CombatLog CombatLog CombatLog CombatLog ."
+      ". . . . . . .";
+    grid-area: Log;
+  }
+  
+  .CombatLog { grid-area: CombatLog; }
+  
+  .AtkButton { grid-area: AtkButton; }
+  
+  .DefButton { grid-area: DefButton; }
+  
+  .FleeButton { grid-area: FleeButton; }
+  

@@ -1,3 +1,16 @@
+import { BrowserRouter, Route } from "react-router-dom";
+import Combat from "./views/Combat/Combat";
+
 export default function App() {
-  return <h1>Hello World</h1>;
+  return (
+   
+      <BrowserRouter>
+
+        <Route path="/">
+          <Combat/>
+        </Route>
+        
+      </BrowserRouter>
+    
+  );
 }
