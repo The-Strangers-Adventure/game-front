@@ -16,7 +16,7 @@
     grid-template-areas:
       ". . Esc . ."
       ". Player . Enemies .";
-    grid-area: Main-View;
+    grid-area: MainView;
   }
   
   .Player { grid-area: Player; }
@@ -57,7 +57,7 @@
       ". MAtk MDef ."
       ". Acc Evs ."
       ". . . .";
-    grid-area: P-Stats;
+    grid-area: PStats;
   }
   
   .Hp { grid-area: Hp; }
@@ -88,7 +88,7 @@
       ". E3Hp E3Hp ."
       ". E4Hp E4Hp ."
       ". . . .";
-    grid-area: E-Stats;
+    grid-area: EStats;
   }
   
   .E1Hp { grid-area: E1Hp; }
